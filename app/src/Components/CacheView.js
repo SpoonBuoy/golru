@@ -24,7 +24,7 @@ function CacheView(props) {
                     return <tr key={e.key}>
                         <td> {e.key} </td>
                         <td> {e.value} </td>
-                        <td> {e.expiry} </td>
+                        <td> {e.expiry/1000000000}s </td>
                     </tr>
                 })
             }
